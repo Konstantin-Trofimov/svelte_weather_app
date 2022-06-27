@@ -1,0 +1,75 @@
+body {
+ background-color: lightblue; }
+
+.container {
+ height: 100vh;
+ padding-top: 50px; }
+
+.wrapper {
+ padding: 5px;
+ margin: 0 auto;
+ max-width: 500px;
+ display: grid; }
+
+img {
+ width: 100px;
+ height: 100px; }
+
+.hint {
+ visibility: hidden; }
+
+.search-block {
+ margin-top: 10px; }
+
+.data-block {
+ margin-top: 5px; }
+
+.other-info {
+ /* visibility: hidden; */
+ /* display: none; */
+ margin-top: 20px; }
+
+h1, .city-name, .temp, .descr, .info, .hide {
+ text-align: center; }
+
+.descr, .info {
+ font-size: 16px; }
+
+.temp {
+ font-size: 20px;
+ font-weight: 600;
+ margin-bottom: 7px; }
+
+.icon {
+ text-align: center; }
+
+.info {
+ cursor: pointer;
+ color: #0e6eb8; }
+ .info:hover {
+   color: #158ae4; }
+
+.deepskyblue {
+ border-color: #158ae4;
+ color: #158ae4; }
+
+.active {
+ visibility: visible;
+ display: block; }
+
+.info-desk {
+ margin-bottom: 2px !important; }
+
+.hide {
+ padding: 2px 0 !important;
+ margin: 0 !important;
+ cursor: pointer; }
+ .hide .button, .hide .info, .hide {
+   transition: all 0.8s; }
+
+@media (max-width: 992px) {
+ .info:hover {
+   color: #0e6eb8; }
+ .hide {
+   padding: 10px 0 !important;
+   font-size: 14px !important; } }
