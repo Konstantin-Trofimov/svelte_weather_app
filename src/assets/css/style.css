@@ -67,6 +67,11 @@ h1, .city-name, .temp, .descr, .info, .hide {
  .hide .button, .hide .info, .hide {
    transition: all 0.8s; }
 
+.disable {
+  /* pointer-events: none;   */
+  /* color: #158ae4; */
+}
+
 @media (max-width: 992px) {
  .info:hover {
    color: #0e6eb8; }

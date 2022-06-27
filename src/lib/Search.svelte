@@ -1,10 +1,21 @@
 <script>
+// @ts-nocheck
  import { onMount } from "svelte";
- import { city, fetchData } from "../store/store";
+ import { city, fetchData } from "../store/store"
+
+ let searchInput
 
  onMount(() => {
-  fetchData();
- });
+  searchInput.focus()
+  fetchData()
+ })
+
+
+ document.addEventListener("keydown", (evt) => {
+  if (evt.key == "Enter") {
+   fetchData()
+  }
+ })
 </script>
 
 <div class="search-block">
@@ -12,6 +23,7 @@
   <div class="ui fluid action input">
    <input
     on:input={(evt) => ($city = evt.target.value)}
+    bind:this={searchInput}
     class="search"
     type="text"
     placeholder=""

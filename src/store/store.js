@@ -7,6 +7,7 @@ let url = () => `https://api.openweathermap.org/data/2.5/weather?q=${get(city)}&
 export let loading = writable(false)
 export let error = writable(false)
 export let isOpen = writable(false)
+export let btnDisable = writable(false)
 
 export async function fetchData() {
  loading.set(true)
