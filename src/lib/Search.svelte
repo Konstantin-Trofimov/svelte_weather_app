@@ -15,7 +15,9 @@
    city.set(json.city)
    fetchData();
   }
+
   getCityByIp();
+  
  });
 
  document.addEventListener("keydown", (evt) => {
