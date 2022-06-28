@@ -1,10 +1,10 @@
 <script>
-  import { isOpen, data, btnDisable } from "./store/store";
+  import { isOpen, data, city, fetchData, btnDisable } from "./store/store";
   import Search from "./lib/Search.svelte";
   import Info from "./lib/Info.svelte";
   import Descr from "./lib/Descr.svelte";
   import { fade } from 'svelte/transition';
-  import { afterUpdate } from "svelte";
+  import { afterUpdate, onMount } from "svelte";
 
   let info = {};
 

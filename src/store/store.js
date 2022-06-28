@@ -1,6 +1,6 @@
 import { writable, get } from 'svelte/store';
 
-export let city = writable('Moscow');
+export let city = writable('');
 export let data = writable({})
 let url = () => `https://api.openweathermap.org/data/2.5/weather?q=${get(city)}&appid=486a3aec30033a9b09d5a6e3b9216892`
 
@@ -10,6 +10,7 @@ export let isOpen = writable(false)
 export let btnDisable = writable(false)
 
 export async function fetchData() {
+ console.log(url())
  loading.set(true)
  error.set(false)
 
